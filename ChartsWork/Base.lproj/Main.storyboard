@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChartsWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTu-ti-Nmi" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="273" width="374" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-4o-eph">
+                                        <rect key="frame" x="10" y="6" width="174" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFX-1u-AoV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019 orders graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srf-Dh-oHH">
+                                        <rect key="frame" x="12.999999999999993" y="12" width="126.33333333333331" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k88-8l-lLq">
+                                        <rect key="frame" x="139.33333333333334" y="19.000000000000018" width="15" height="4.9999999999999858"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="nVj-SR-5za"/>
+                                            <constraint firstAttribute="height" constant="15" id="r0B-Sk-vkR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Srf-Dh-oHH" firstAttribute="leading" secondItem="JTu-ti-Nmi" secondAttribute="leading" constant="13" id="2au-5z-r5z"/>
+                                    <constraint firstItem="Srf-Dh-oHH" firstAttribute="centerY" secondItem="Xdp-4o-eph" secondAttribute="centerY" id="5E0-oi-S9A"/>
+                                    <constraint firstItem="k88-8l-lLq" firstAttribute="centerY" secondItem="Srf-Dh-oHH" secondAttribute="centerY" id="ClL-jH-NjM"/>
+                                    <constraint firstItem="Xdp-4o-eph" firstAttribute="top" secondItem="JTu-ti-Nmi" secondAttribute="top" constant="6" id="NCV-2v-kau"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xdp-4o-eph" secondAttribute="trailing" constant="190" id="ScX-ka-DW0"/>
+                                    <constraint firstItem="Xdp-4o-eph" firstAttribute="leading" secondItem="JTu-ti-Nmi" secondAttribute="leading" constant="10" id="ZUl-s0-mC3"/>
+                                    <constraint firstItem="k88-8l-lLq" firstAttribute="leading" secondItem="Srf-Dh-oHH" secondAttribute="trailing" id="jGK-y0-B5e"/>
+                                    <constraint firstAttribute="height" constant="190" id="z3V-q6-mmg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JTu-ti-Nmi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="EeI-Jl-uvj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JTu-ti-Nmi" secondAttribute="trailing" constant="20" id="eEk-26-6Ly"/>
+                            <constraint firstItem="JTu-ti-Nmi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="keA-9g-YPL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelText" destination="Srf-Dh-oHH" id="IN1-yk-fkN"/>
+                        <outlet property="lineChartView" destination="JTu-ti-Nmi" id="pau-bc-3Dr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="68.478260869565219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

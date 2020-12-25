@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532DEEB9AE2FA0EB1291542E /* Pods_ChartsWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02B877942DE3F600BCE2808 /* Pods_ChartsWork.framework */; };
 		CCD0CC4A25611A3B00FE95CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0CC4925611A3B00FE95CD /* AppDelegate.swift */; };
 		CCD0CC4C25611A3B00FE95CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0CC4B25611A3B00FE95CD /* SceneDelegate.swift */; };
 		CCD0CC4E25611A3B00FE95CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0CC4D25611A3B00FE95CD /* ViewController.swift */; };
 		CCD0CC5125611A3B00FE95CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD0CC4F25611A3B00FE95CD /* Main.storyboard */; };
 		CCD0CC5325611A3C00FE95CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD0CC5225611A3C00FE95CD /* Assets.xcassets */; };
 		CCD0CC5625611A3C00FE95CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD0CC5425611A3C00FE95CD /* LaunchScreen.storyboard */; };
+		CCF0919E2562A67A00D1ACA0 /* CustomMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0919D2562A67A00D1ACA0 /* CustomMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB76245A117C11A335920327 /* Pods-ChartsWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsWork.debug.xcconfig"; path = "Target Support Files/Pods-ChartsWork/Pods-ChartsWork.debug.xcconfig"; sourceTree = "<group>"; };
 		CCD0CC4625611A3B00FE95CD /* ChartsWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD0CC4925611A3B00FE95CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD0CC4B25611A3B00FE95CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		CCD0CC5225611A3C00FE95CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD0CC5525611A3C00FE95CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCD0CC5725611A3C00FE95CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF0919D2562A67A00D1ACA0 /* CustomMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarker.swift; sourceTree = "<group>"; };
+		D02B877942DE3F600BCE2808 /* Pods_ChartsWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DF59996D500CB9494E0369 /* Pods-ChartsWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsWork.release.xcconfig"; path = "Target Support Files/Pods-ChartsWork/Pods-ChartsWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532DEEB9AE2FA0EB1291542E /* Pods_ChartsWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90180254349260A7B2915085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D02B877942DE3F600BCE2808 /* Pods_ChartsWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB71FD637E39466BF8528C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB76245A117C11A335920327 /* Pods-ChartsWork.debug.xcconfig */,
+				F2DF59996D500CB9494E0369 /* Pods-ChartsWork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CCD0CC3D25611A3B00FE95CD = {
 			isa = PBXGroup;
 			children = (
 				CCD0CC4825611A3B00FE95CD /* ChartsWork */,
 				CCD0CC4725611A3B00FE95CD /* Products */,
+				CBB71FD637E39466BF8528C5 /* Pods */,
+				90180254349260A7B2915085 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				CCD0CC4925611A3B00FE95CD /* AppDelegate.swift */,
 				CCD0CC4B25611A3B00FE95CD /* SceneDelegate.swift */,
 				CCD0CC4D25611A3B00FE95CD /* ViewController.swift */,
+				CCF0919D2562A67A00D1ACA0 /* CustomMarker.swift */,
 				CCD0CC4F25611A3B00FE95CD /* Main.storyboard */,
 				CCD0CC5225611A3C00FE95CD /* Assets.xcassets */,
 				CCD0CC5425611A3C00FE95CD /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCD0CC5A25611A3C00FE95CD /* Build configuration list for PBXNativeTarget "ChartsWork" */;
 			buildPhases = (
+				E28016FCE113B253AC8A0426 /* [CP] Check Pods Manifest.lock */,
 				CCD0CC4225611A3B00FE95CD /* Sources */,
 				CCD0CC4325611A3B00FE95CD /* Frameworks */,
 				CCD0CC4425611A3B00FE95CD /* Resources */,
+				826F860004C100BA4C972B65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		826F860004C100BA4C972B65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsWork/Pods-ChartsWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsWork/Pods-ChartsWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartsWork/Pods-ChartsWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E28016FCE113B253AC8A0426 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCD0CC4225611A3B00FE95CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +210,7 @@
 			files = (
 				CCD0CC4E25611A3B00FE95CD /* ViewController.swift in Sources */,
 				CCD0CC4A25611A3B00FE95CD /* AppDelegate.swift in Sources */,
+				CCF0919E2562A67A00D1ACA0 /* CustomMarker.swift in Sources */,
 				CCD0CC4C25611A3B00FE95CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,10 +355,12 @@
 		};
 		CCD0CC5B25611A3C00FE95CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB76245A117C11A335920327 /* Pods-ChartsWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EJQ3DNKGU;
 				INFOPLIST_FILE = ChartsWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,10 +375,12 @@
 		};
 		CCD0CC5C25611A3C00FE95CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DF59996D500CB9494E0369 /* Pods-ChartsWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EJQ3DNKGU;
 				INFOPLIST_FILE = ChartsWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
